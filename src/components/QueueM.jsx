@@ -110,14 +110,15 @@ export default function QueueM() {
         </div>
 
         {/* Queue Display Card */}
-        <div className="flex-1 bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-6 shadow-2xl">
+        <div className="flex-1 bg-white/10 backdrop-blur-lg border border-dashed border-white/20 rounded-3xl p-6 shadow-2xl">
           <div className="flex items-center gap-3 mb-6">
             <FaUsers size={24} className="text-cyan-400" />
 
             <h3 className="text-2xl font-semibold text-white">Current Queue</h3>
           </div>
+
           {queue.length === 0 && (
-            <div className="space-y-2 text-center">
+            <div className="space-y-2 text-center border border-dashed p-5">
               <p className="text-lg text-white">No customers in the Queue</p>
             </div>
           )}
