@@ -42,7 +42,7 @@ export default function QueueM() {
   };
   const handleDelete = (id) => {
     const updatedQueue = queue.filter((customer) => {
-      customer.id !== id;
+      return customer.id !== id;
     });
 
     setQueue(updatedQueue);
