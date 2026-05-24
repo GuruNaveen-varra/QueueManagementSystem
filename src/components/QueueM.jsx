@@ -116,6 +116,11 @@ export default function QueueM() {
 
             <h3 className="text-2xl font-semibold text-white">Current Queue</h3>
           </div>
+          {queue.length === 0 && (
+            <div className="space-y-2 text-center">
+              <p className="text-lg text-white">No customers in the Queue</p>
+            </div>
+          )}
 
           <div>
             {queue.map((customer) => (
