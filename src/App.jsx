@@ -1,13 +1,13 @@
 import "./App.css";
 //import MenuCard from "./components/Menu";
 
-import QueueM from "./components/QueueM.jsx";
+import UseRef from "./components/UseRef.jsx";
 
 const App = () => {
   return (
     <>
       <div>
-        <QueueM />
+        <UseRef />
       </div>
     </>
   );
